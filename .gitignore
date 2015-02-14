@@ -1,0 +1,11 @@
+/application/bootstrap
+/application/config
+/application/files
+/application/languages
+/application/index.html
+/concrete
+/packages
+/updates
+/index.php
+/LICENSE.txt
+/robots.txt
