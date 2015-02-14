@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<styles version="1.0">
+    <set name="Full Page">
+        <style name="Box Background" variable="box-background" type="color" />
+    </set>
+</styles>
