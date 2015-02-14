@@ -2,5 +2,16 @@
 <styles version="1.0">
     <set name="Full Page">
         <style name="Box Background" variable="box-background" type="color" />
+        <style name="Box Spacing" variable="box-spacing" type="size" />
+        <style name="Page Background" variable="page-background" type="image" />
+        <style name="Border" variable="border" type="color" />
+        <style name="Text" variable="body" type="type" />
+        <style name="Headings" variable="headings" type="type" />
+    </set>
+    <set name="Header">
+        <style name="Title" variable="header-title" type="type" />
+        <style name="Description" variable="header-description" type="type" />
+        <style name="Text Shadow" variable="header-text-shadow" type="color" />
+        <style name="Nav Item Padding" variable="nav-item-padding" type="size" />
     </set>
 </styles>

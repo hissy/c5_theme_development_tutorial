@@ -7,8 +7,8 @@
  */
 
 body {
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
+    font-family: @body-type-font-family;
+    background: url(@page-background-image) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -23,21 +23,21 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
-    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+    text-transform: @headings-type-text-transform;
+    font-family: @headings-type-font-family;
+    font-weight: @headings-type-font-weight;
+    letter-spacing: @headings-type-letter-spacing;
 }
 
 p {
-    font-size: 1.25em;
-    line-height: 1.6;
-    color: #000;
+    font-size: @body-type-font-size;
+    line-height: @body-type-line-height;
+    color: @body-type-color;
 }
 
 hr {
     max-width: 400px;
-    border-color: #999999;
+    border-color: @border-color;
 }
 
 .brand,
@@ -78,11 +78,11 @@ hr {
 .tagline-divider {
     margin: 15px auto 3px;
     max-width: 250px;
-    border-color: #999999;
+    border-color: @border-color;
 }
 
 main .container {
-    margin-bottom: 20px;
+    margin-bottom: @box-spacing-size;
     padding: 30px 15px;
     background: #fff;
     background: @box-background-color;
@@ -98,7 +98,7 @@ main .container {
 .img-border {
     float: none;
     margin: 0 auto 0;
-    border: #999999 solid 1px;
+    border: @border-color solid 1px;
 }
 
 .img-left {
@@ -122,16 +122,17 @@ footer p {
         margin: 0;
         padding: 30px 0 10px;
         text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 5em;
-        font-weight: 700;
+        text-shadow: 1px 1px 2px @header-text-shadow-color;
+        font-family: @header-title-type-font-family;
+        font-size: @header-title-type-font-size;
+        font-weight: @header-title-type-font-weight;
+        letter-spacing: @header-title-type-letter-spacing;
         line-height: normal;
-        color: #fff;
+        color: @header-title-type-color;
     }
 
     .brand a {
-        color: #fff;
+        color: @header-title-type-color;
     }
 
     .top-divider {
@@ -148,16 +149,17 @@ footer p {
         margin: 0;
         padding: 0 0 40px;
         text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        text-transform: uppercase;
-        font-size: 1.25em;
-        font-weight: 400;
-        letter-spacing: 3px;
-        color: #fff;
+        text-shadow: 1px 1px 2px @header-text-shadow-color;
+        text-transform: @header-description-type-text-transform;
+        font-size: @header-description-type-font-size;
+        font-weight: @header-description-type-font-weight;
+        letter-spacing: @header-description-type-letter-spacing;
+        color: @header-description-type-color;
     }
 
     .address-bar h1, .address-bar p {
-        color: #fff;
+        color: @header-description-type-color;
+        font-family: @header-description-type-font-family;
     }
 
     .navbar {
@@ -179,7 +181,7 @@ footer p {
     }
 
     .nav>li>a {
-        padding: 35px;
+        padding: @nav-item-padding-size;
     }
 
     .navbar-nav>li>a {
