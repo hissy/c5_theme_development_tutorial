@@ -77,7 +77,7 @@ hr {
     border-color: #999999;
 }
 
-.box {
+main .container {
     margin-bottom: 20px;
     padding: 30px 15px;
     background: #fff;
@@ -126,6 +126,10 @@ footer p {
         color: #fff;
     }
 
+    .brand a {
+        color: #fff;
+    }
+
     .top-divider {
         margin-top: 0;
     }
@@ -145,6 +149,10 @@ footer p {
         font-size: 1.25em;
         font-weight: 400;
         letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .address-bar h1, .address-bar p {
         color: #fff;
     }
 
