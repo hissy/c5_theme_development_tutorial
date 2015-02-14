@@ -1,15 +1,12 @@
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo Localization::activeLanguage()?>">
 
 <head>
+    <?php Loader::element('header_required');?>
 
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Business Casual - Start Bootstrap Theme</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -163,8 +160,7 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <?php Loader::element('footer_required'); ?>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
